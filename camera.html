@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>QR Code Scanner</h1>
+<a href="index.html" class="button-link button-small">トップに戻る</a>
+<button id="switch-camera-btn" class="button-link button-small" disabled>カメラを切り替え</button>
+
+<div id="video-container">
+    <video id="video" playsinline></video>
+</div>
+<div id="status-message">カメラを起動しています...</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+<script src="common.js"></script>
+<script src="camera.js"></script>
+</body>
+</html>
